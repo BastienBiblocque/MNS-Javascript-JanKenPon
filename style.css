@@ -1,0 +1,15 @@
+#isWin{
+    display: none;
+}
+#isLoose{
+    display: none;
+}
+body{
+    background:rebeccapurple;
+}
+.button{
+    height: 10em;
+}
+.gif {
+    height: 25em;
+}

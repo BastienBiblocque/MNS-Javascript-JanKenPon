@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Jan Ken Pon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="gameContainer">
+    <div>
+        <img class="button" onclick="play(0)" src="src/pierre.jpg">
+        <img class="button" onclick="play(1)" src="src/plante.jpg">
+        <img class="button" onclick="play(2)" src="src/insecateur.png">
+    </div>
+    <div>
+        <div>Vous avez jouer <div id="jeuPlayer"></div></div>
+        <div>L'IA a joué <div id="jeuIA"></div></div>
+        <div>Résultat : <div id="displayResults"></div></div>
+        Score IA : <div id="scoreIa"></div>
+        Score utilisateurs : <div id="scoreUsers"></div>
+    </div>
+</div>
+<div id="endGame">
+    <img class="gif" src="src/lepers-oui.gif" id="isWin">
+    <img class="gif" src="src/julien-lepers-c-est-non.gif" id="isLoose">
+    <div id="retry">
+        <button onclick="retry()">Rejouer ?</button>
+    </div>
+</div>
+
+</body>
+</html>
