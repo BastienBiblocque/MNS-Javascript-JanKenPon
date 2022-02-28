@@ -20,7 +20,6 @@ function play(playerValue){
     } else {
         scoreIa++;
         resultats = 'Vous perdez';
-
     }
     document.getElementById("displayResults").innerHTML = resultats;
     document.getElementById("scoreIa").innerHTML = scoreIa;
@@ -42,6 +41,8 @@ function lockGame() {
 function retry() {
     scoreIa = 0;
     scoreUsers = 0;
+    document.getElementById("isLoose").style.display = "none";
+    document.getElementById("isWin").style.display = "none";
     document.getElementById("displayResults").innerHTML = resultats;
     document.getElementById("scoreIa").innerHTML = scoreIa;
     document.getElementById("scoreUsers").innerHTML = scoreUsers;
